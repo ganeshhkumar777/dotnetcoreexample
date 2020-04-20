@@ -1,0 +1,48 @@
+Authentication 
+
+    knowing who the user is.
+
+Authorization
+
+    knowing whether has access to do the specific action or not.
+
+need for centralised identity provider: 
+Microsoft Azure, google, fb, twitter
+
+    user & password management.
+
+    token expiry 
+
+OAuth2
+    
+    protocol for authorising.
+    
+Open Id connect
+
+    protocol which supersedes OAuth2 and supports authentication.
+   
+myapp.com
+
+
+Azure app
+
+myapp.com       -->  identity provider   --> NAME, AGE, ID
+                <-- jwt token 
+
+                in api
+myappapi.com    jwt token-->  identity provider
+
+valid        
+challenge --> indicates that it is not a valid token for this identity provider.
+               But this can possibly valid token of someother identity provider.
+forbid    --> indicates token is invalid.
+
+
+
+
+
+
+
+     
+
+
