@@ -1,0 +1,47 @@
+dbcontext
+    --> opening a connection to a database
+    --> interact with the database and do something
+    --> closing a connection to a database
+
+httpcontext
+
+    httpcontext is a object which 
+    is dotnet representation of http request
+
+    kestrel server --> httpcontext --> app
+
+    mysite.com              --> https://mysiteapi.com
+    headers:                      httpcontext  
+    content-type: app/json
+    
+    middlewares
+
+     httpcontext  -->    
+     
+      middleware1(middleware2) {
+        // it will do some work on http context
+         middleware2();
+     }
+
+                  --> 
+     middleware2(middleware3) {
+
+     } 
+
+    
+middleware1
+  /\     |
+   |     |
+   |     \/
+middleware2
+  /\     |
+   |     |
+   |     \/
+
+middleware3
+
+                  controller
+
+                  actionmethod
+
+
